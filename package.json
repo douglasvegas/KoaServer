@@ -1,0 +1,33 @@
+{
+  "name": "KoaServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:douglasvegas/KoaServer.git",
+  "author": "douglasvegas <964273641@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build && npm run watch",
+    "build": "npm run build-ts && npm run tslint",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,green.bold\" \"npm run watch-ts\" \"pm2 start bin/development.js\" ",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.0",
+    "eslint": "^4.1.1",
+    "global": "^4.3.2",
+    "jest": "^20.0.4",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.1",
+    "koa-router": "^7.2.1",
+    "koa-session": "^5.4.0",
+    "lodash": "^4.17.4",
+    "pm2": "^2.5.0",
+    "ts-jest": "^20.0.7",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.1"
+  },
+  "devDependencies": {}
+}
