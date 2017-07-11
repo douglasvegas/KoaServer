@@ -6,12 +6,20 @@
   "author": "douglasvegas <964273641@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start": "npm run build && npm run watch",
+    "start": "npm run build && npm run pm2 && npm run watch-ts ",
     "build": "npm run build-ts && npm run tslint",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,green.bold\" \"npm run watch-ts\" \"pm2 start bin/development.js\" ",
     "build-ts": "tsc",
-    "watch-ts": "tsc -w"
+    "watch-ts": "tsc -w",
+    "test": "jest",
+    "pm2": "pm2 start bin/development.js --watch",
+    "startApp": "node bin/development.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/tests/.*|\\.(test|spec))\\.(tsx?|jsx?)$"
   },
   "dependencies": {
     "concurrently": "^3.5.0",

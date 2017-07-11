@@ -1,9 +1,17 @@
 {
   "name": "KoaServer",
   "globalDependencies": {
+    "jest": "registry:dt/jest#19.2.0+20170312200138",
     "node": "registry:dt/node#7.0.0+20170322231424"
   },
   "dependencies": {
+    "accepts": "registry:dt/accepts#1.3.0+20170321201455",
+    "cookies": "registry:npm/cookies#0.6.1+20160830164239",
+    "http-assert": "registry:npm/http-assert#1.2.0+20160831052916",
+    "keygrip": "registry:dt/keygrip#1.0.0+20170324151803",
+    "koa": "registry:dt/koa#2.0.0+20170311193110",
+    "koa-compose": "registry:npm/koa-compose#3.0.0+20160723033700",
+    "koa-router": "registry:dt/koa-router#7.0.0+20170316163447",
     "lodash": "registry:npm/lodash#4.0.0+20161015015725"
   }
 }

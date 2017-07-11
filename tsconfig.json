@@ -15,8 +15,8 @@
   "include": [
     "src/**/*"
   ],
-  "exclude": [
+  "exclude":[
     "node_modules",
-    "**/*.spec.ts"
+    "typings"
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/types/npm-koa-compose/b3c3a1e7e41a0de8939f46efac1c8a4737bec699/typings.json",
+    "raw": "registry:npm/koa-compose#3.0.0+20160723033700",
+    "main": "index.d.ts",
+    "version": "^3.0.0",
+    "dependencies": {
+      "es6-promise": {
+        "src": "https://raw.githubusercontent.com/typed-typings/npm-es6-promise/fb04188767acfec1defd054fc8024fafa5cd4de7/typings.json",
+        "raw": "registry:npm/es6-promise#3.0.0+20160211003958",
+        "main": "dist/es6-promise.d.ts",
+        "name": "es6-promise"
+      }
+    },
+    "name": "koa-compose"
+  }
+}
