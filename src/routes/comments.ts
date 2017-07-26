@@ -1,6 +1,3 @@
-/**
- * 
- */
 /// <reference path="../../typings/index.d.ts" />
 import * as Router from 'koa-router';
 const router = new Router();

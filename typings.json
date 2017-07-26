@@ -12,6 +12,8 @@
     "koa": "registry:dt/koa#2.0.0+20170311193110",
     "koa-compose": "registry:npm/koa-compose#3.0.0+20160723033700",
     "koa-router": "registry:dt/koa-router#7.0.0+20170316163447",
-    "lodash": "registry:npm/lodash#4.0.0+20161015015725"
+    "lodash": "registry:npm/lodash#4.0.0+20161015015725",
+    "mongodb": "registry:dt/mongodb#2.1.0+20170212052546",
+    "mongoose-auto-increment": "registry:dt/mongoose-auto-increment#5.0.1+20160428045346"
   }
 }
